@@ -1,0 +1,67 @@
+body {
+    background-color: rgba(239, 207, 207, 0.941);
+
+
+}
+
+/*header {
+    background-color: rgb(245, 189, 189);
+    display: block;
+    margin-block: top;
+} */
+
+
+
+.navbar ul {
+    align-items: right;
+    direction: rtl;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    color: rgb(242, 221, 242);
+    /* font-size: larger;  הגדךת פונט בהאבר לא עבר לי */
+}
+
+.navbar span {
+    justify-content: lef;
+    font-size: 25px;
+    top: 8px;
+    margin: left;
+}
+
+/*nav a {
+    direction: rtl;
+    border-radius: 30%;
+}
+*/
+
+
+h2 {
+    text-align: center;
+}
+
+.frame {
+    background-color: white;
+    border-radius: 20px;
+    border-color: beige;
+    height: 200px;
+
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;900&family=Playfair+Display&family=Poppins:wght@200;400;700&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;900&family=Playfair+Display&family=Poppins:wght@200;400;700&family=Satisfy&family=Varela+Round&display=swap");
+body {
+  direction: rtl;
+  font-family: "heebo", sans-serif;
+}
+
+li.nav-item {
+  margin: 0 12px;
+}
+
+.container-fluid-icon {
+  flex-flow: row-reverse;
+}
+
+.logo span {
+  margin-left: 10px;
+  font-size: 41px;
+  font-family: satisty, cursive;
+}
+
+a.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: black !important;
+}
+
+.main {
+  text-align: center;
+  background-color: rgba(133, 202, 193, 0.75);
+  padding: 6rem !important;
+  margin: 0 !important;
+}
+.main h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.main p {
+  font-weight: bold;
+}
+
+.theIcons {
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0);
+}
+.theIcons img {
+  size: 80px;
+}
+
+#about {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+#about img {
+  width: 150px;
+  border-radius: 50%;
+}
+#about h2 {
+  margin: 30px;
+  font-weight: bold;
+}
+#about button {
+  margin-top: 20px;
+  font-size: 1.4em;
+  border-radius: 30px;
+  padding: 6px 32px;
+}
+
+#gallery {
+  padding: 60px 0;
+  background-color: #f3f3f3;
+}
+#gallery .row {
+  max-width: 900px;
+  padding: 16px;
+  margin: auto;
+}
+#gallery .row > div {
+  padding: 16px;
+}
+#gallery .row .card {
+  border-radius: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+#gallery .row .card:hover {
+  box-shadow: 0 0 8px #000;
+}
+#gallery h2 {
+  text-align: center;
+  font-weight: bold;
+}
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0462aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact {
+  background-image: url(pics/Rectangle\ 41.png);
+  background-color: #3a3a3a;
+  background-size: 54%;
+  background-position: revert;
+  margin: 0;
+  color: white;
+  background-repeat: no-repeat;
+  background-image: opacity 40%;
+}
+#contact input.form-control {
+  border-bottom: 3px solid aqua;
+  border-radius: 0;
+  margin-bottom: 16px;
+}
+
+#links {
+  background-color: aqua;
+  padding: 25px o;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 25px 0 !important;
+  box-sizing: unset;
+}
+#links img {
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+#links img s span {
+  margin: 8px 0;
+  display: inline-block;
+}
+
+footer {
+  padding: 8px;
+  background-color: #000;
+  color: white;
+  direction: ltr;
+}/*# sourceMappingURL=index2.css.map */
