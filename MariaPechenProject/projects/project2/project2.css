@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;600;700;900&family=Playfair+Display&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,800&family=Raleway:wght@600&family=Satisfy&family=Varela+Round&display=swap');
+
+body {
+
+    direction: rtl;
+}
+
+
+.main {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#fillbox {}
+
+
+button {
+    padding: 12px 35px;
+    width: 200px;
+    margin: 6px;
+    font-size: medium;
+    color: aliceblue;
+    background-color: #020253;
+    display: block;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*.imgcont {
+    background: url(Coffee.png) no-repeat center fixed;
+    background-size: cover;
+}*/
+
+#fillbox {
+    text-align: center;
+    padding: 252px 80px;
+    margin-top: 0;
+}
+
+.plachoder {
+    margin-bottom: 0%;
+    text-align: right;
+}
+
+input {
+    width: fit-content;
+}
+
+p {
+    margin: 16px 0 0 0;
+}
+
+:placeholder-shown {
+    width: -webkit-fill-available;
+    border-style: none;
+    border-bottom-color: darkblue;
+    height: 50px;
+    background-color: #E5EEFF;
+}
