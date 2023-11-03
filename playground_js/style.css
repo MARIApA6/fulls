@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    height: 100%;
+    background-color: #b3e9bd;
+}
+
+body {
+    background-image: #b3e9bd;
+    padding-bottom: 400px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+.frame {
+    width: 100%;
+    max-width: 600px;
+    min-height: 600px;
+    background-color: #ffffffc9;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    direction: ltr;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;*/
+
+}
+
+.frame div {
+    border: 2px solid;
+    color: #242424;
+    font-size: large;
+    /*border-block-end-style: none;
+    border-inline-start-style: none;*/
+}
+
+
+
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #232323;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.frame>div:hover {
+    background-color: #777777;
+}
+
+.innertext {
+    size: 20px;
+}
