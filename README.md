@@ -1,2 +1,2 @@
 # fulls
-working onmy codding skills 
+working onmy codding skills and
