@@ -4,12 +4,22 @@ myDiv.addEventListener('click', function () {
 });
 
 //function some() {
-  //  const testDiv = document.getElementById('testDiv');
+//  const testDiv = document.getElementById('testDiv');
 
-    //testDiv.addEventListener('click', some('x'));
+//testDiv.addEventListener('click', some('x'));
 
 //}
 
 
 //startGame()
 //restartButton.addEbentListener('click', startGame)
+
+
+function isLeap(year) {
+
+    var year = output;
+    if (year / 4 % 0) {
+        (year / 100 === 0) / 400
+    }
+    console.log(isLeap);
+}
