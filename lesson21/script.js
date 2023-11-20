@@ -61,7 +61,7 @@ numbers.reduce((res, x) => res += x, 0);
 // מחליף את כל האברים שבמערך לפרמטר המבוקש
 // numbers.fill(80); // שמנו את הפונקציה כהערה ע"מ לא ליצור נזקים
 
-onst fn1 = () => { }; // fn1() - undefined
+const fn1 = () => { }; // fn1() - undefined
 const fn2 = a => { }; // fn2(8) - undefined
 const fn3 = (a, b) => a + b; // fn3(8, 5) - 13
 const fn4 = x => x; // fn4(10) - 10
