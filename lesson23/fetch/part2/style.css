@@ -62,4 +62,31 @@ select {
 .studentsCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.studentsCards.div {
+    box-shadow: 0 0 3px #918c8cc9;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 14px;
+}
+
+.frame header {
+    text-align: center;
+    padding: 8px;
+}
+
+.frame header label {
+    padding: 6px 12px;
+    border-radius: 16px;
+    background-color: white;
+    margin: opx 4px;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.frame header label:hover {
+    scale: 1.2;
 }
