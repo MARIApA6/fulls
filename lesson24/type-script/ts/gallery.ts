@@ -1,5 +1,5 @@
 class Gallery {
-    currentIndex: number;
+    currentIndex: number = 0;
     constructor(private elemId: string, private images: string[]) {
 
         const elem = document.getElementById(elemId);
