@@ -2,10 +2,10 @@ class studentsClass {
 
     //יצרנו משתנה ראשוני שאין בו כלום
     // סטודנט:מסוג סטודנט
-    student: student;
+    student: Student;
 
     //הקונסטרקטור שם את הסטודנט במחלקה^שם
-    constructor(student: student) {
+    constructor(student: Student) {
         this.student = student;
     }
     getFullName() {
@@ -31,7 +31,7 @@ interface Student {
     inActive: boolean;
 }
 
-const item = new StudentClass({
+const item = new studentsClass({
     id: 0,
     firstName: '',
     lastName: '',
