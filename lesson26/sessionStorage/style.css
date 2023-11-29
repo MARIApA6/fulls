@@ -6,7 +6,7 @@ html {
 
 body {
     direction: rtl;
-    background-image: linear-gradient(#9e47bd, #ffffff);
+    background-image: linear-gradient(#47bd6e, #ffffff);
     padding-bottom: 200px;
 }
 
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-    opacity: 0.8;
+    background-color: #a4d967;
 }
 
 input,
@@ -83,60 +83,35 @@ p {
     color: white;
 }
 
-header {
-    margin-bottom: 12px;
+#gallery {
+    position: relative;
 }
 
-.tasks {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+#gallery button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 70px;
+    background-color: #00000091;
+    font-size: 22px;
+    display: none;
 }
 
-@media (max-width: 930px) {
-    .tasks {
-        grid-template-columns: repeat(2, 1fr);
-    }
+#gallery button:hover {
+    background-color: black;
 }
 
-@media (max-width: 600px) {
-    .tasks {
-        grid-template-columns: repeat(1, 1fr);
-    }
+#gallery:hover button {
+    display: block;
 }
 
-.tasks>div {
-    box-shadow: 0 0 3px #bababa;
-    background-color: white;
-    border-radius: 5px;
-    padding: 0 14px;
+#right {
+    right: 0;
+    border-radius: 20px 0 0 20px;
 }
 
-.tasks>div {
-    border-right: 6px solid;
-}
-
-.tasks>div.low {
-    border-color: #006980;
-}
-
-.tasks>div.medium {
-    border-color: orange;
-}
-
-.tasks>div.high {
-    border-color: red;
-}
-
-.tasks>div.completed {
-    border: none;
-    background-color: #d5ff95;
-}
-
-.tasks footer {
-    padding: 8px 0;
-}
-
-.tasks footer .remove {
-    background-color: #bb4949;
+#left {
+    left: 0;
+    border-radius: 0 20px 20px 0;
 }

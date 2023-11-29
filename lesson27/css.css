@@ -1,0 +1,31 @@
+.active {
+    background-image: radial-gradient(#212121 20%, transparent 20%),
+        radial-gradient(#fafafa 20%, transparent 20%);
+    background-color: #44e535;
+    background-position: 0 0, 50px 50px;
+    background-size: 9px 9px;
+}
+
+.topLeftRadius {
+    border-radius: 12px 0 0 0;
+}
+
+.topRightRadius {
+    border-radius: 0 12px 0 0;
+}
+
+.bottomRightRadius {
+    border-radius: 0 0 12px 0;
+}
+
+.bottomLeftRadius {
+    border-radius: 0 0 0 12px;
+}
+
+.apple::after {
+    content: "🍎";
+    position: relative;
+    top: -7px;
+    right: -3px;
+    font-size: 11px;
+}
