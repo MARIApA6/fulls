@@ -10,6 +10,10 @@ body {
     padding-bottom: 200px;
 }
 
+header {
+    margin-bottom: 12px;
+}
+
 * {
     font-family: 'Rubik', sans-serif !important;
 }
@@ -18,6 +22,13 @@ h1 {
     text-align: center;
     color: white;
     margin: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
 }
 
 .frame {
@@ -38,50 +49,9 @@ h1 {
     border: 1px solid;
 }
 
-header {
-    margin-bottom: 12px;
-}
-
-.board {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 24px;
-}
-
-.board div {
-    width: 80px;
-    height: 80px;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: 50px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-
 .board div:not(.dirty):hover {
     cursor: pointer;
-    background-color: rgb(224, 183, 88);
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 0;
-    margin: 0px;
-}
-
-button {
-    background-color: #8bc34a;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-}
-
-button:hover {
-    background-color: #a4d967;
+    background-color: rgb(224, 88, 88);
 }
 
 .board {
@@ -93,17 +63,28 @@ button:hover {
 }
 
 .board div {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #fafafa00;
-    font-size: 10px;
+    cursor: pointer;
+    font-size: 15px;
     display: flex;
+    outline: 1px solid rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
+    color: #e4e4e4;
 }
+
 
 .active {
     background-color: #8bc34a;
+
+
+}
+
+.active.head {
+    position: relative;
+
 }
 
 .head.up {
@@ -120,4 +101,10 @@ button:hover {
 
 .head.left {
     border-radius: 12px 0 0 12px;
+}
+
+.apple::after {
+    content: "🍎";
+    position: relative;
+
 }
