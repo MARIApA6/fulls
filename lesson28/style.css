@@ -24,12 +24,12 @@ h1 {
     width: 80%;
     max-width: 900px;
     min-height: 600px;
-    background-color: #ffffffc9;
+    /*background-color: #ffffffc9;*/
     margin: auto;
     padding: 8px 16px;
     border-radius: 6px;
     text-align: center;
-    padding-top: 72px;
+    padding-top: 6px;
 
 }
 
@@ -43,8 +43,8 @@ h1 {
 .board {
     display: inline-grid;
     overflow: hidden;
-    background-color: black;
-    border: 6px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 6px solid rgb(255, 255, 255);
     gap: 6px;
     padding: 6px;
     border-radius: 12px;
@@ -53,7 +53,7 @@ h1 {
 .board div {
     width: 100px;
     height: 100px;
-    background: rgb(189, 104, 104);
+    background-color: rgb(189, 104, 104);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,12 @@ h1 {
     text-shadow: 0 0 6px rgb(69, 69, 69);
     margin: 4px;
     border-radius: 12px;
+    cursor: pointer;
 
+}
+
+.board div:hover {
+    background-color: rgb(202, 160, 160);
 }
 
 h2 {
@@ -79,4 +84,19 @@ button {
     padding: 8px 12px;
     border-radius: 6px;
     border: none;
+}
+
+.active {
+    background-color: coral !important;
+}
+
+p {
+    text-align: center;
+    color: white;
+    padding: 24px;
+    font-size: 30px;
+}
+
+p .margin {
+    margin: 0 12px;
 }
