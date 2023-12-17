@@ -1,7 +1,8 @@
 const myDiv = document.getElementById('myDiv');
-myDiv.addEventListener('click', function () {
+for (ev => ev.innerHTML) {
     myDiv.innerHTML = "x";
-});
+    addEventListener(click)
+}
 
 //function some() {
 //  const testDiv = document.getElementById('testDiv');
