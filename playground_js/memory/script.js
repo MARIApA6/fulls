@@ -43,11 +43,16 @@ function createBoard() {
 
         div.addEventListener("click", ev => {
             const emptyIdex = divs.findIndex(div => div.innerHTML == '');
-            const elem = ev.target;
-            //const nearIdex = divs.findIndex(div => div.innerHTML == checksAllOptions(i));
+            const elem = options.target;
+
+            //    const isTheRightCon = option.every(l => l = )
+            // const res1 = isTheRightCon(options());
+
             if (i == emptyIdex, i++) {
                 const empty = divs.find(el => el.innerHTML == '');
-                empty.classList.remove('active');
+                //empty.classList.remove('active');
+
+
                 empty.innerHTML = elem.innerHTML;
                 elem.innerHTML = "";
                 // document.querySelector('.conter').innerHTML = ++counter;
@@ -71,15 +76,6 @@ function checksAllOptions() {
 
     //התנאי העליון בודק מקרה קיצון -כאשר המספר שלילי אינו עומד בתנאי שלנו 
 
-    // if (options >= 0) {
-    //   options.splice(3, (0, 1, 2));
-    //}
-
-    //  if (options >= 0) {
-    //    delete options[0, 1, 2];
-    // }
-
-    //const filterArr = options.filter(n => n >= 0);
     //איפוס המערך(מנקודת ההתחלה 0 ,עד לנקודת הסוף)
     options.splice(0, options.length);
 
@@ -105,9 +101,6 @@ function checksAllOptions() {
         options.push(left);
         console.log("שמאל");
     }
-
-
-
 }
 
 function isGmaeOver() {
