@@ -11,37 +11,44 @@ const winningCombos = [
   [2, 4, 6],
 ]
 
+const emptyBox = document.innerHTML = "";
 let isPlyer_o_turn = false
 let boxes = document.querySelectorAll("[data-cell]")
 const boardElem = document.getElementById("board")
 const restartBtn = document.getElementById("restartGame")
 
-playerX()
+//startGame()
+
+function startGame() {
+  boxes.addEventListener('click', ev => ev =)
+  if (boxes == emptyBox && isPlyer_o_turn == false) {
+    playerX();
+  } else (boxes == emptyBox && isPlyer_o_turn == true)
+  {
+    playerO();
+  }
+}
+console.log("works");
+
 
 function playerX() {
   boxes.forEach(cell => {
     cell.addEventListener('click', function handleClick(ev) {
-      console.log("box cliked", ev);
+      console.log("box cliked x", ev);
       //cell.setAttribute('style', 'background-color: yellow;')
       cell.innerHTML = "x";
     });
   });
 }
-// צריך לעשות טוגל שיעשב סוויצ בין משתנים אולי בגלל לולאת for ech?
-///לא עובד הפלייר אפס
+
 function playerO() {
-  const emptyBox = document.innerHTML = "";
-  if (boxes == emptyBox) {
-    boxes.forEach(cell => {
-      cell.addEventListener('click', function handleClick(ev) {
-        console.log("box cliked", ev);
-        cell.innerHTML = "o";
-      });
+  boxes.forEach(cell => {
+    cell.addEventListener('click', function handleClick(ev) {
+      console.log("box cliked o", ev);
+      cell.innerHTML = "o";
     });
-  }
+  });
 }
-
-
 
 
 function addTextToBoxs() {
