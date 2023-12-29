@@ -1,2 +1,2 @@
 # fulls
-working onmy codding skills and more bmmnnmn
+working onmy codding skills and more bmmnnmnm
