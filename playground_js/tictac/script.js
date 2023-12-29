@@ -12,51 +12,66 @@ const winningCombos = [
 ]
 
 const emptyBox = document.innerHTML = "";
-let isPlyer_o_turn = false
+let isPlyer_o_turn = true
 let boxes = document.querySelectorAll("[data-cell]")
+const cellElm = document.getElementById(".cell")
 const boardElem = document.getElementById("board")
 const restartBtn = document.getElementById("restartGame")
 
-//startGame()
+/*startGame()
 
 function startGame() {
-  boxes.addEventListener('click', ev => ev =)
-  if (boxes == emptyBox && isPlyer_o_turn == false) {
+  cellElm.addEventListener('click', e => ev())
+  if (cellElm == emptyBox && isPlyer_o_turn == true) {
     playerX();
-  } else (boxes == emptyBox && isPlyer_o_turn == true)
+  } else (cellElm == emptyBox && isPlyer_o_turn == !true)
   {
     playerO();
   }
 }
-console.log("works");
+console.log("works");*/
 
+
+
+
+
+let isPlayerTurn = true;
 
 function playerX() {
   boxes.forEach(cell => {
-    cell.addEventListener('click', function handleClick(ev) {
+    cell.addEventListener('click', function (ev) {
       console.log("box cliked x", ev);
       //cell.setAttribute('style', 'background-color: yellow;')
       cell.innerHTML = "x";
+      isPlayerTurn = false;
     });
   });
 }
 
 function playerO() {
   boxes.forEach(cell => {
-    cell.addEventListener('click', function handleClick(ev) {
-      console.log("box cliked o", ev);
+    cell.addEventListener('click', function (ev) {
       cell.innerHTML = "o";
+      isPlayerTurn = true;
     });
   });
 }
 
+function toggleOandX() {
+  isPlayerTurn ? true(playerX()) : playerO();
+}
+
+toggleOandX()
+
+
+//addTextToBoxs()
 
 function addTextToBoxs() {
   const emptyBoxes = document.innerHtml = "";
   if (boxes == emptyBoxes) {
-    boxes.classList.addEventListener(click, ev => ev = add.innerHtml = (x_player));
+    boxes.classList.addEventListener("click", ev => ev = add.innerHTML = ("x_player"));
   } else {
-    boxes.classList.addEventListener(click, ev => ev = add.innerHtml = (o_player));
+    boxes.classList.addEventListener("click", ev => ev = add.innerHtml = ("o_player"));
   }
 }
 
