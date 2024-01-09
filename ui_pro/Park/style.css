@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: azure;
+}
+
+
+nav {
+    background-color: beige;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 16px;
+}
+
+.frame {
+    width: 100%;
+    max-width: 900px;
+    min-height: 900px;
+    background-color: #e08989c9;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+.framed div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+}
+
+
+.board {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 24px;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #8bc34a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+/*button:hover {
+    background-color: #a4d967;
+}*/
+
+
+
+
+footer {
+    background-color: beige;
+    text-align: 20px;
+
+}
