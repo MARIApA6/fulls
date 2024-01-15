@@ -24,6 +24,11 @@ li {
 
 }
 
+#lofgoMain {
+    direction: ltr;
+    position: fixed;
+}
+
 * {
     font-family: 'Rubik', sans-serif !important;
 }
@@ -91,10 +96,13 @@ button {
 }*/
 
 
-
-
 footer {
     background-color: beige;
     text-align: 20px;
 
+}
+
+section {
+    background-color: aqua;
+    size: 300px;
 }
