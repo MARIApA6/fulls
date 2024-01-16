@@ -101,20 +101,30 @@ input[type="checkbox"]:checked::before {
 .counter-container {
     height: 2rem;
     display: flex;
-    justify-content: space-between;
+
     color: pink;
 }
 
 .counter-container p {
-    align-self: center;
+    align-self: right;
 }
 
-.counter-container button {
+
+.deleteBtn {
     border: none;
     background-color: rgba(45, 112, 1253, 0.73);
     color: white;
     font-size: 1rem;
     border-radius: 0.5rem;
+
+}
+
+.deleteSelectedItem {
+    border-color: var(--backgrounblue);
+    color: var(--backgrounblue);
+    border-radius: 12px;
+    background-color: transparent;
+    align-items: right;
 }
 
 
