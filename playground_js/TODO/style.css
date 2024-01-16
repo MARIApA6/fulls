@@ -3,6 +3,7 @@
     --pink: pink;
     --offwhite: rgb(248, 240, 213);
     --purpel: rgb(211, 173, 238);
+    --backgrounblue: rgba(45, 112, 1253, 0.73);
     --blue: rgb(116, 201, 247);
 
 
@@ -65,6 +66,13 @@ input[type="text"]::placeholder {
     color: rgb(232, 211, 229);
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 input[type="checkbox"]::before {
     content: "\2713";
     display: inline-block;
@@ -77,15 +85,17 @@ input[type="checkbox"]::before {
     color: transparent;
 }
 
-input[type="checkbox"]::before ::after {
-    color: lightcoral;
-    background-color: blanchedalmond;
-    border: 0.06rem solid rgb(225, 142, 142);
+input[type="checkbox"]:checked::before {
+    color: rgb(171, 128, 240);
+    background-color: rgb(243, 204, 145);
+    border: solid rgb(243, 204, 145);
     border-radius: 50%;
 }
 
 .counter {
-    border: 0.06rem solid rgb(46, 46, 46);
+    border: 1px solid grey;
+    margin-bottom: 20px;
+
 }
 
 .counter-container {
@@ -101,7 +111,7 @@ input[type="checkbox"]::before ::after {
 
 .counter-container button {
     border: none;
-    background-color: blue;
+    background-color: rgba(45, 112, 1253, 0.73);
     color: white;
     font-size: 1rem;
     border-radius: 0.5rem;
@@ -142,7 +152,14 @@ li {
 }
 
 #todoList p {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     color: black;
+}
+
+#todoList .disabled {
+    color: rgb(131, 131, 131);
 }
 
 .disabled {
@@ -162,7 +179,7 @@ li {
 }
 
 .author {
-    color: pink;
+    color: hwb(350 75% 0%);
     font-weight: bold;
     font-size: 2rem;
 }
@@ -174,6 +191,7 @@ li {
 .scroll {
     height: 15rem;
     scrollbar-width: thin;
+    cursor: pointer;
 }
 
 .scroll::-webkit-scrollbar {
@@ -181,10 +199,16 @@ li {
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: hwb(350 75% 0%);
     border-radius: 0.5rem;
+
 }
 
-scroll::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
     display: none;
+}
+
+.input.checkbox {
+    border: 12px;
+    background-color: antiquewhite;
 }
