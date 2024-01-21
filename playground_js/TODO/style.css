@@ -45,8 +45,13 @@ h2 {
     position: absolute;
     right: 0.5rem;
     bottom: 0.5rem;
+    cursor: pointer;
 }
 
+.btn:hover {
+    background-color: var(--backgrounblue);
+    color: white;
+}
 
 .input {
     position: relative;
@@ -101,9 +106,13 @@ input[type="checkbox"]:checked::before {
 .counter-container {
     height: 2rem;
     display: flex;
-
+    flex-direction: row;
+    align-items: flex-start;
     color: pink;
+    margin: 12px;
 }
+
+
 
 .counter-container p {
     align-self: right;
@@ -116,7 +125,13 @@ input[type="checkbox"]:checked::before {
     color: white;
     font-size: 1rem;
     border-radius: 0.5rem;
+    margin-left: 12px;
+    cursor: pointer;
+    padding: 7px 12px;
+}
 
+.deleteBtn:hover {
+    background-color: var(--pink);
 }
 
 .deleteSelectedItem {
@@ -124,7 +139,16 @@ input[type="checkbox"]:checked::before {
     color: var(--backgrounblue);
     border-radius: 12px;
     background-color: transparent;
-    align-items: right;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 7px 12px;
+}
+
+.deleteSelectedItem:hover {
+    background-color: var(--pink);
+    color: black;
+    border-color: var(--pink);
+
 }
 
 
