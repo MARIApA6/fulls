@@ -1,6 +1,4 @@
-:root {}
-
-body {
+.body {
     margin: 0;
     height: 100vh;
     background-color: rgb(181, 181, 181);

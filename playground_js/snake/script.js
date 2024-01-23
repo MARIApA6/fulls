@@ -15,12 +15,3 @@ for (ev => ev.innerHTML) {
 //startGame()
 //restartButton.addEbentListener('click', startGame)
 
-
-function isLeap(year) {
-
-    var year = output;
-    if (year / 4 % 0) {
-        (year / 100 === 0) / 400
-    }
-    console.log(isLeap);
-}
