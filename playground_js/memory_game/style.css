@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
 
-html {
-    height: 100%;
-}
 
 body {
-    direction: rtl;
+
     background-color: rgb(21, 21, 21);
-    padding-bottom: 200px;
     color: white;
+    text-align: center;
 }
 
 * {
@@ -21,51 +18,43 @@ h1 {
     margin: 16px;
 }
 
-.frame {
-    width: 80%;
+
+
+.bigDiv {
     max-width: 900px;
     min-height: 600px;
-    /*background-color: #ffffffc9;*/
-    margin: auto;
-    padding: 8px 16px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    background-color: pink;
     border-radius: 6px;
-    text-align: center;
-    padding-top: 6px;
-
+    padding: 10px 400px;
 }
 
-.framed div {
-    width: 80px;
-    height: 80px;
-    border: 1px solid;
-}
-
-
-.mainDiv {
+.smallCards {
     background-color: white;
     color: blue;
-    padding: 19px;
-    margin: 19px;
     border-radius: 12px;
-    display: flex;
     font-size: large;
-    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+    height: 100px;
+    width: 60px;
+    backface-visibility: hidden;
+
 }
 
-.mainDiv:hover {
+.smallCards:hover {
     cursor: pointer;
 }
 
 
-/*קצת מיות ראבל אולי שימושי במיקום הדיבים הםנימיים */
-.body {
-    background-color: pink;
-
+.hiddenDiv {
+    transform: rotateY(180deg);
+    background-color: blueviolet;
 }
 
-.bigDiv {
-    display: grid;
-    grid-template-columns: 90px 90px 90px;
-    grid-template-rows: 120px 120px 120px;
-    gap: 20px;
+.flipCard {
+    transform: rotateY(180deg);
 }
