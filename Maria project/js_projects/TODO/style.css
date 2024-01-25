@@ -1,0 +1,248 @@
+:root {
+    --gradient: linear-gradient(0deg, rgba(45, 112, 1253, 0.73) 0%, pink 100%);
+    --pink: pink;
+    --offwhite: rgb(248, 240, 213);
+    --purpel: rgb(211, 173, 238);
+    --backgrounblue: rgba(45, 112, 1253, 0.73);
+    --blue: rgb(116, 201, 247);
+
+
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    height: 3rem;
+    color: rgb(60, 59, 59);
+    text-align: center;
+}
+
+.btn {
+    background-color: pink;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 12px;
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--backgrounblue);
+    color: white;
+}
+
+.input {
+    position: relative;
+    display: flex;
+
+}
+
+.input-field {
+    width: 100%;
+    border: 0.06rem solid grey;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(232, 211, 229);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid grey;
+    border-radius: 50%;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+    color: rgb(171, 128, 240);
+    background-color: rgb(243, 204, 145);
+    border: solid rgb(243, 204, 145);
+    border-radius: 50%;
+}
+
+.counter {
+    border: 1px solid grey;
+    margin-bottom: 20px;
+
+}
+
+.counter-container {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: pink;
+    margin: 12px;
+}
+
+
+
+.counter-container p {
+    align-self: right;
+}
+
+
+.deleteBtn {
+    border: none;
+    background-color: rgba(45, 112, 1253, 0.73);
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 12px;
+    cursor: pointer;
+    padding: 7px 12px;
+}
+
+.deleteBtn:hover {
+    background-color: var(--pink);
+}
+
+.deleteSelectedItem {
+    border-color: var(--backgrounblue);
+    color: var(--backgrounblue);
+    border-radius: 12px;
+    background-color: transparent;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 7px 12px;
+}
+
+.deleteSelectedItem:hover {
+    background-color: var(--pink);
+    color: black;
+    border-color: var(--pink);
+
+}
+
+
+/* To do continer */
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background-color: white;
+    opacity: 90 %;
+    padding: 3rem;
+    height: 50%;
+    width: 60%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+    max-width 30rem;
+}
+
+.todo-continer {
+    display: flex;
+    gap: 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.3rem;
+}
+
+#todoList p {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: black;
+}
+
+#todoList .disabled {
+    color: rgb(131, 131, 131);
+}
+
+.disabled {
+    display: flex;
+    text-decoration: line-through;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    border-color: pink;
+    border-style: solid;
+}
+
+.author {
+    color: hwb(350 75% 0%);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.made-by {
+    text-align: center;
+}
+
+.scroll {
+    height: 15rem;
+    scrollbar-width: thin;
+    cursor: pointer;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: hwb(350 75% 0%);
+    border-radius: 0.5rem;
+
+}
+
+.scroll::-webkit-scrollbar-track {
+    display: none;
+}
+
+.input.checkbox {
+    border: 12px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+
+body {
+
+    background-color: rgb(21, 21, 21);
+    color: white;
+    text-align: center;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+
+
+.bigDiv {
+    max-width: 900px;
+    min-height: 600px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    background-color: pink;
+    border-radius: 6px;
+    padding: 10px 400px;
+}
+
+.smallCards {
+    background-color: white;
+    color: blue;
+    border-radius: 12px;
+    font-size: large;
+    padding: 30px;
+    margin: 10px;
+    height: 100px;
+    width: 60px;
+    backface-visibility: hidden;
+
+}
+
+.smallCards:hover {
+    cursor: pointer;
+}
+
+
+.hiddenDiv {
+    transform: rotateY(180deg);
+    background-color: blueviolet;
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+}
