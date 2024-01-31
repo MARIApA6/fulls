@@ -1,68 +1,116 @@
-const cards = document.querySelector("smallCards");
+const cards = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+const cardsArry = [...cards, ...cards];
+let idex_card1 = [];
+let idex_card2 = [];
 
-function creatCards() {
+const bigD = document.getElementById("bigDId");
 
-    for (i = 0; i < 16; i++) {
-        const bigD = document.getElementById("bigD");
-        const smallCards = document.createElement('div');
+function createCards() {
+    for (i = 0; i < 18; i++) {
+        const indvCard = document.createElement('div');
 
-        smallCards.innerText = "Small card";
+        indvCard.innerText = "card";
+        indvCard.attribute = cards[i];
+        bigD.append(indvCard);
 
-        bigD.append(smallCards);
+        indvCard.classList.add('cardClass');
+        indvCard.setAttribute("data-cards", cardsArry[i]/*or funtion shuffle*/);
 
-        smallCards.classList.add('smallCards');
-        bigD.classList.add('bigD');
+        indvCard.addEventListener('click', flipCard)
 
 
+        //לבנו דיבים בפנים if (){
+
+        // }
     }
-    cards.addEventListener('click', flipCard);
+    //   לא עובד  indvCard.addEventListener('click', flipCard);
 }
 
-function flipCard() {
-    cards.forEach(element => {
-        const hiddenDiv = document.createElement('div');
-        innerDiv.classList.add('innerDiv');
+//פעולה השאפל 
+const shuffle = () => {
+    cardsArry.sort(() => Math.random() - 0.5);
+};
+shuffle();
 
-        hiddenDiv.querySelectorAll('innerDiv');
-    })
+
+function flipCard() {
+    (event) => {
+        const indexCard = event.target;
+        if (!indexCard.classList.contians('flipCard')) {
+            createCards.classList.add('flipCard');
+        }
+    }
+
 }
 flipCard();
 
 
-const theCard = document.querySelector(".smallCards");
+// function flipCard() {
+//     let pickCard = document.querySelector(".cardClass");
 
-theCard.addEventListener('click', flipCard);
+//     for (i = 0; i < pickCard.length; i++)
+//         pickCard[i].classList.toggle(".flipCard");
+
+// }
+
+// flipCard();
 
 
+////////////////////////////////////////
+// const theCards = document.querySelector(".dataCard");
+// let cardA = theCards.value = [];
+// let cardB = theCards.value = [];
+// function checkMatch() {
+//     if (cardA === cardB) {
 
-//add same picture to 2 divs
-//add a condition that is they fliped togather ==true
+//     }
+// }
+
+// function checkCards() {
+//     let twoCards = (idex_card1, idex_card2)
+//     if (idex_card1 === index_card2) {
+//     }
+// }
+
+///////////////////////////////////
 
 
 /*
+function flipCard() {
+    cards.forEach(element => {
+        const hiddenDiv = document.createElement('div');
+        innerDiv.classList.add('innerDiv');
+        hiddenDiv.querySelectorAll('innerDiv');
+    });
+};
 
-functions
-
-2.chak right conifgrtion(if two ==right)
-3.leave the right one open
-4.
-
+const theCard = document.querySelector(".smallCards");
+theCard.addEventListener('click', flipCard);
 */
+
 
 /*
 function creatCards() {
-
     for (i = 0; i < 9; i++) {
         const body = document.body
         const mainDiv = document.createElement('div');
-
         mainDiv.innerText = "Main Div"
-
         body.append(mainDiv);
-
         mainDiv.classList.add('mainDiv');
         body.classList.add('body');
-
     }
 }
+*/
+
+/*
+פונקציה שעושה לזה רנדר כל פעם מחדש?
+const renderCards = () => {
+    const gameContainer = document.querySelector('.bigDiv');
+    gameContainer.innerHTML = '';
+    cards.forEach((value, index) => {
+        const card = createCards(value, index);
+        gameContainer.appendChild(card);
+    });
+};
+
 */
