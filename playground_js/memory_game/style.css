@@ -68,3 +68,9 @@ h1 {
     transform: rotateY(180deg);
     background-color: aqua;
 }
+
+.frontSide {
+    color: black;
+    background-color: white;
+
+}

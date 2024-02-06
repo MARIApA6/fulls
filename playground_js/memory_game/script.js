@@ -1,7 +1,8 @@
 const cards = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 const cardsArry = [...cards, ...cards];
-let idex_card1 = [];
-let idex_card2 = [];
+//let idex_card1 = [];
+//let idex_card2 = [];
+const innerCard = [];
 
 const bigD = document.getElementById("bigDId");
 
@@ -16,21 +17,38 @@ function createCards() {
         indvCard.classList.add('cardClass');
         indvCard.setAttribute("data-cards", cardsArry[i]/*or funtion shuffle*/);
 
-        indvCard.addEventListener('click', flipCard)
+        // indvCard.addEventListener('click', appendDivs)
 
-
-        //לבנו דיבים בפנים if (){
-
-        // }
     }
-    //   לא עובד  indvCard.addEventListener('click', flipCard);
 }
 
-//פעולה השאפל 
-const shuffle = () => {
-    cardsArry.sort(() => Math.random() - 0.5);
-};
-shuffle();
+cards.forEach(element => {
+    const newDivs = cardsArry.map(appendDivs);
+});
+
+
+function appendDivs() {
+
+    const mainCards = document.querySelector('.cardClass')
+
+    // 2 divs in continer
+    const frontSide = document.createElement('div');
+    const backSide = document.createElement('div');
+
+    frontSide.classList.add('frontSide');
+    backSide.classList.add('backSide');
+
+    mainCards.append(frontSide, backSide);
+
+}
+
+
+
+
+
+
+
+//$('div.cardClass').hover(flipThis);
 
 
 function flipCard() {
@@ -43,6 +61,14 @@ function flipCard() {
 
 }
 flipCard();
+
+
+//פעולה השאפל 
+const shuffle = () => {
+    cardsArry.sort(() => Math.random() - 0.5);
+};
+shuffle();
+
 
 
 // function flipCard() {

@@ -1,3 +1,5 @@
+//#region עיצוב כללי 
+/****************************************************/
 const styling = {
     backgroundColor: 'white',
     fontSize: '30px',
@@ -5,6 +7,7 @@ const styling = {
     color: 'black',
 };
 
+// פונקציה שמגדירה את העיצוב הכללי של האתר
 function syncStyle() {
     const page = document.querySelector(".page");
 
@@ -13,34 +16,19 @@ function syncStyle() {
     }
 }
 
+// פונקציה שמשנה את האובייקט של העיצוב ישירות מהאלמנטים
 function changeStyle(key, value) {
     styling[key] = value;
     syncStyle();
 }
+/*****************************************************************/
+//#endregion
 
-function changeFontColor() {
-    const text = document.querySelector(".text");
-
-    for (const c in styling) {
-        text.style[c] = styling[c];
-    }
-}
-
-function selectFontKind() {
-    const text = document.querySelector(".text");
-
-}
-
-function marginS() {
-    const page = document.querySelector(".page");
-
-    for (const s in styling) {
-        page.style[s] = styling[s];
-    }
-}
-////////////////////////////////////??????
+//#region שינוי תפריט 
+/****************************************************/
 const elementType = document.querySelector('.elementType');
 
+// הצגת האופציות בהתאם לבחירת סוג האלמנט
 elementType.addEventListener('change', ev => {
     const type = ev.target.value;
 
@@ -49,7 +37,7 @@ elementType.addEventListener('change', ev => {
     });
 });
 
-
+// שינוי התצוגה בהתאם לתפריט העליון
 document.querySelectorAll("nav a").forEach(a => {
     // הוספת אירוע לחיצה על התפריט
     a.addEventListener('click', ev => {
@@ -65,3 +53,59 @@ document.querySelectorAll("nav a").forEach(a => {
         document.querySelector(ev.target.id).style.display = 'block';
     });
 });
+/****************************************************/
+//#endregion
+
+//#region יצירת האלמנט
+function addElement() {
+    // סוג האלמנט (לפי ה-HTML)
+    const type = elementType.value;
+
+    let tagName = type;
+
+    if (type == "title") {
+        tagName = document.querySelector("#headerType").value;
+    }
+
+    // האלמנט החדש
+    const newElem = document.createElement(tagName);
+
+    // התוכן שיוצג בתוך האלמנט
+    const value = document.querySelector("#value").value;
+
+    if (type == 'input') {
+        newElem.type = document.querySelector("#inputType").value;
+        newElem.value = value;
+    } else {
+        newElem.innerHTML = value;
+    }
+
+    const fontSize = document.querySelector(`.${type} #fontSize`);
+    const padding = document.querySelector(`.${type} #padding`);
+    const border = document.querySelector(`.${type} #border`);
+    const color = document.querySelector(`.${type} #color`);
+    const bg = document.querySelector(`.${type} #bg`);
+
+    if (fontSize) {
+        newElem.style.fontSize = fontSize.value + 'px';
+    }
+
+    if (padding) {
+        newElem.style.padding = padding.value + 'px';
+    }
+
+    if (border) {
+        newElem.style.border = border.value + 'px solid';
+    }
+
+    if (color) {
+        newElem.style.color = color.value;
+    }
+
+    if (bg) {
+        newElem.style.backgroundColor = bg.value;
+    }
+
+    document.querySelector(".page").appendChild(newElem);
+}
+//#endregion

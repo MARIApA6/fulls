@@ -1,47 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
 
 html {
-    height: 100%;
-    background-color: #b3e9bd;
+    min-height: 100%;
 }
 
 body {
-    background-image: #b3e9bd;
-    padding-bottom: 400px;
+    direction: rtl;
+    background-color: #383838;
+    padding-bottom: 200px;
 }
 
+header {
+    margin-bottom: 12px;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
 
 h1 {
     text-align: center;
     color: white;
     margin: 16px;
 }
-
-.frame {
-    width: 100%;
-    max-width: 600px;
-    min-height: 600px;
-    background-color: #ffffffc9;
-    margin: auto;
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-align: center;
-    display: grid;
-    direction: ltr;
-    grid-template-columns: repeat(3, 1fr);
-
-}
-
-.frame div {
-    border: 2px solid;
-    color: #242424;
-    font-size: large;
-    /*border-block-end-style: none;
-    border-inline-start-style: none;*/
-}
-
-
-
 
 h2 {
     font-size: 18px;
@@ -50,18 +31,80 @@ h2 {
     margin: 0px;
 }
 
-button {
-    background-color: #232323;
-    color: white;
-    padding: 8px 12px;
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #ffffff00;
+    margin: auto;
+    padding: 8px 16px;
     border-radius: 6px;
-    border: none;
+    text-align: center;
+
 }
 
-.frame>div:hover {
-    background-color: #777777;
+.framed div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
 }
 
-.innertext {
-    size: 20px;
+.board div:not(.dirty):hover {
+    cursor: pointer;
+    background-color: rgb(224, 88, 88);
+}
+
+.board {
+    display: inline-grid;
+    border-radius: 3px;
+    border: 4px solid;
+    overflow: hidden;
+    background-color: #464646;
+}
+
+.board div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fafafa00;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    outline: 1px solid rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    color: #e4e4e4;
+}
+
+
+.active {
+    background-color: #8bc34a;
+
+
+}
+
+.active.head {
+    position: relative;
+
+}
+
+.head.up {
+    border-radius: 12px 12px 0 0;
+}
+
+.head.right {
+    border-radius: 0 12px 12px 0;
+}
+
+.head.down {
+    border-radius: 0 0 12px 12px;
+}
+
+.head.left {
+    border-radius: 12px 0 0 12px;
+}
+
+.apple::after {
+    content: "🍎";
+    position: relative;
+
 }

@@ -10,7 +10,7 @@ body {
 }
 
 * {
-    font-family: 'Rubik', sans-serif !important;
+    font-family: 'Rubik', sans-serif;
 }
 
 .mobileAlert {
@@ -47,6 +47,7 @@ body {
 
 .panelSide {
     background-color: #000052;
+    padding-bottom: 150px !important;
 }
 
 .panelSide h1 {
@@ -65,6 +66,7 @@ body {
     background-color: white;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.429);
     margin: 24px auto;
+    box-sizing: border-box;
 }
 
 section {
@@ -77,16 +79,20 @@ label {
     padding-bottom: 6px;
 }
 
-button {
-    background-color: #8bc34a;
+.elements button {
+    background-color: #4CAF50;
     color: white;
     padding: 8px 12px;
-    border-radius: 6px;
+    border-radius: 3px;
     border: none;
+    display: block;
+    width: 60%;
+    font-size: 18px;
+    margin: 16px auto;
 }
 
-button:hover {
-    background-color: #a4d967;
+.elements button:hover {
+    background-color: #5fc962;
 }
 
 input,
@@ -114,4 +120,16 @@ nav a {
 
 nav a:hover {
     background: #fecd8d;
+}
+
+.active {
+    background: #fac27a;
+}
+
+.elements {
+    display: none;
+}
+
+.elements section:not(section:first-child) {
+    display: none;
 }
