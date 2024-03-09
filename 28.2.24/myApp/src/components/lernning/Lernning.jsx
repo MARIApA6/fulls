@@ -1,4 +1,6 @@
 import React from 'react'
+import ClockFC from './ClockFC';
+import PersonalDetails from './PersonalDetails';
 
 export const Lernning = () => {
     return (
@@ -10,6 +12,9 @@ export const Lernning = () => {
 
             <h4>Personal Details</h4>
             <PersonalDetails />
+            <PersonalDetailsProps name="Maria pechen" />
+            <PersonalDetailsPropsObjects person={{ name: 'maria', phone: '054', email: 'maria@gmail.com' }} />
+            <ClockFC date={new Date()} />
         </div>
 
 

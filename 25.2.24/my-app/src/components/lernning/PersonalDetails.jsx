@@ -14,4 +14,4 @@ class PersonalDetails extends Component {
     }
 }
 
-export default;
+export default PersonalDetails;

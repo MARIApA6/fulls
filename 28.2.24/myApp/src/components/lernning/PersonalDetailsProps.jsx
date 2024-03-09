@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react';
+import './PersonalDetails';
 
-export default class PersonalDetailsProps extends Component {
-    render() {
-        return (
-            <div>PersonalDetailsProps</div>
-        )
-    }
+
+const PersonalDetailsProps = (props) => {
+    return (
+        <div>
+            <div className="personal_details_props">
+                {props.name}
+            </div >
+        </div>
+
+    )
 }
 
-rcc
+export default Lernning;

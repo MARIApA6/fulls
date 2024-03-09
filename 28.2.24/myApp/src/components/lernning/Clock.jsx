@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 class Clock extends Component {
 
-
+    #timerID = null;
     state = {};
 
-    constructor(prps) {
+    constructor(props) {
         super(props);
+
         this.state = { date: props.date };
     }
 
