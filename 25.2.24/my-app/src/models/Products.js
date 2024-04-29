@@ -1,4 +1,4 @@
-class product {
+export default class Product {
     id;
     name;
     price;
@@ -11,10 +11,10 @@ class product {
 }
 
 
-const products = [
-    { id: 1, name: 'Product 1', price: 100 },
-    { id: 2, name: 'Product 2', price: 200 },
-    { id: 3, name: 'Product 3', price: 300 },
-    { id: 4, name: 'Product 4', price: 400 },
-    { id: 5, name: 'Product 5', price: 500 },
+export const PRODUCTS = [
+    new Product(1, 'Product 1', 100),
+    new Product(2, 'Product 2', 200),
+    new Product(3, 'Product 3', 300),
+    new Product(4, 'Product 4', 400),
+    new Product(5, 'Product 5', 500),
 ];

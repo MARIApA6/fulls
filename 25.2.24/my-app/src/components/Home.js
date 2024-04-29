@@ -1,5 +1,6 @@
 import './Home.css';
 import React, { Component } from 'react';
+import ProductList from './product/ProductList';
 
 
 
@@ -9,6 +10,7 @@ class Home extends Component {
         return (
             <div className="home">
                 {this.props.text}
+                <ProductList />
             </div>
         );
     }

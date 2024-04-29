@@ -1,6 +1,6 @@
 const PageHeader = (props) => {
     return (
-        <div class="center">
+        <div className="center">
             <h1>{props.title}</h1>
         </div>
     );
