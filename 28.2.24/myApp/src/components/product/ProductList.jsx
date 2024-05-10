@@ -2,8 +2,7 @@ import React from 'react'
 import { PRODUCTS } from '../../models/Products'
 
 const ProductList = () => {
-    const products;
-
+    const products = PRODUCTS;
     return (
         <div>
             <h3>Product List</h3>
