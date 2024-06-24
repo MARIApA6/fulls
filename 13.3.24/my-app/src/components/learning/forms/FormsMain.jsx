@@ -10,6 +10,10 @@ const FormsMain = () => {
             <hr style={{ marginTop: '25px' }} />
             <h2>Product New - Object</h2>
             <ProductNewObject />
+
+            <hr style={{ marginTop: '25px' }} />
+            <h2>Product New - Class Instance</h2>
+            <ProductNewClassInstance />
         </div>
     )
 }

@@ -1,20 +1,22 @@
-class product {
+export default class product {
     id;
     name;
     price;
+    quantity;
 
-    constructor(id, name, price) {
+    constructor(id, name, price, quantity) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
     }
 }
 
 
 const products = [
-    { id: 1, name: 'Product 1', price: 100 },
-    { id: 2, name: 'Product 2', price: 200 },
-    { id: 3, name: 'Product 3', price: 300 },
-    { id: 4, name: 'Product 4', price: 400 },
-    { id: 5, name: 'Product 5', price: 500 },
+    new product(1, 'Product 1', 100, 0),
+    new product(2, 'Product 2', 200, 0),
+    new product(3, 'Product 3', 300, 0),
+    new product(4, 'Product 4', 400, 0),
+    new product(5, 'Product 5', 500, 0),
 ];
