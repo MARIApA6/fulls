@@ -5,3 +5,4 @@ moving up
 todo list 
 flip card
 גככ
+nav bar
