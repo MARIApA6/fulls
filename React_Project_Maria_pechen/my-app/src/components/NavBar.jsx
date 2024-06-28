@@ -1,8 +1,26 @@
 import React from 'react';
-import Link from "react-router-dom";
+import Route from "react-router-dom";
 import "./navbar.css";
 
 
+
+const Navbar = () => {
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <Route to="/">Home</Route>
+                </li>
+                <li>
+                    <Route to="/about">About</Route>
+                </li>
+                <li>
+                    <Route to="/contact">Contact</Route>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 
 /*const NavBar = () => {
@@ -16,7 +34,7 @@ import "./navbar.css";
         </div>
     )
 }*/
-function NavBar() {
+/*function NavBar() {
     return (
         <nav className="NavBar">
             <ul>
@@ -29,5 +47,6 @@ function NavBar() {
         </nav>
     );
 }
+*/
 
-export default NavBar;
+export default Navbar;
