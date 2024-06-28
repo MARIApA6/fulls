@@ -2,16 +2,22 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Header />
+          <Route path='/' />
+          <Footer />
+        </Routes>
 
-      <main className='App-main'>
-        <p> hello</p>
-      </main>
-      <Footer />
+      </Router>
+
     </div>
   );
 }
