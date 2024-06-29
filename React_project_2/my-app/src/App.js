@@ -3,8 +3,10 @@ import Login from "./pages/Login";
 import Main from "./pages/Main";
 import SignUp from "./pages/SignUp";
 import { Route, Routes } from "react-router-dom";
-import Card from "./components/Card";
-import productImg from './components/assets/product_1.jpg';
+//import Card from "./components/Card";
+//import productImg from './components/assets/product_1.jpg';
+import Footer from "./components/Footer";
+//import LoginForm from "./components/LoginForm";
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
           <Route path="SignUp" element={<SignUp />} />
         </Routes >
       </div>
+      <Footer />
 
     </>
   )
@@ -29,4 +32,4 @@ function App() {
         <Card />
         <Card />*/
 
-export default App
+export default App;
