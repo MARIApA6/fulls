@@ -1,0 +1,94 @@
+h1 {
+    margin: 20px;
+    align-items: center;
+}
+
+
+form {
+    margin: 1rem;
+}
+
+.signup-container {
+    display: flex;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 1rem;
+
+}
+
+.login-container {
+
+    position: relative;
+    max-width: 400px;
+    max-height: fit-content;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+.signup-container div {}
+
+.field_holder {
+    margin-bottom: 1.2em;
+}
+
+input {
+    background-color: none;
+
+}
+
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='date'],
+input[type='PhoneNumber'] {
+    padding: 8px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 3px solid rgb(77, 74, 76);
+    margin: 20px;
+}
+
+label {
+    align-items: flex-start;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #df92ec;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #a5cdf8;
+}
+
+.register_link {
+    text-decoration: none;
+}
+
+
+/*{
+    
+}
+
+*/

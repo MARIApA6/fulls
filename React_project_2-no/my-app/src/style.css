@@ -55,9 +55,7 @@ label .serchBar {
     cursor: pointer;
 }
 
-.searchbtn:hover {
-    background-color: #444;
-}
+
 
 .search-results {
     display: flex;

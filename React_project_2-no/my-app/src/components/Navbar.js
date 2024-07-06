@@ -1,9 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useMemo, useRef, useState } from "react";
 import "../style.css";
-import DarkModeToggle from "./DarkMood/DarkMood";
-
-
+//import DarkModeToggle from "./DarkMood/DarkMood";
 
 
 export default function Navbar() {
@@ -38,7 +36,7 @@ export default function Navbar() {
                     value={query}
                     onChange={handleSearch}
                     type="search"
-                    placeholder="Search..."
+                    placeholder="Search"
                 />
                 <button className="searchbtn" type="submit">Search</button>
             </form>
@@ -47,7 +45,6 @@ export default function Navbar() {
                     <div key={index}>{item}</div>
                 ))}
             </div>
-            <DarkModeToggle />
             <ul>
                 <CustomLink to="/">Main</CustomLink>
                 <CustomLink to="/SignUp">Sign Up</CustomLink>

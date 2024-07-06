@@ -10,7 +10,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/Login', {
+            const response = await axios.post('http://example.com/api/login', {
                 username,
                 password,
             });
@@ -19,7 +19,7 @@ const LoginForm = () => {
             console.error('Login error:', error);
 
         }
-    };
+    }
 
     /*
     const LoginForm = ({ handleLogin }) => {
@@ -66,6 +66,7 @@ const LoginForm = () => {
         </>
 
     );
-};
+}
 
-export default LoginForm;
+
+export default LoginForm
