@@ -1,0 +1,40 @@
+body {
+    direction: rtl;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #7a7a7a;
+    max-width: 600px;
+}
+
+div {
+    margin-bottom: 12px;
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #000000b3;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    /* width: 100%; */
+    box-sizing: border-box;
+}

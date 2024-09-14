@@ -1,0 +1,62 @@
+.block {
+    background-color: aqua;
+    height: 50px;
+}
+
+.rectamgle {
+    height: 50px;
+}
+
+.yellow {
+    background-color: blue;
+}
+
+.green {
+    background-color: rgb(94, 156, 243);
+    width: 4;
+}
+
+.blue {
+    background-color: rgb(140, 121, 221);
+    width: 3;
+}
+
+.red {
+    background-color: rgb(63, 63, 201);
+    width: 4;
+}
+
+.purple {
+    background-color: rgb(134, 219, 245);
+    width: 4;
+}
+
+.rank .green {
+    width: 90%;
+}
+
+.rank .blue {
+    width: 80%;
+}
+
+.rank .red {
+    width: 70%;
+}
+
+.rank .purple {
+    width: 60%;
+}
+
+.small .rectamgle {
+    width: 20%;
+}
+
+.small {
+    width: 40%;
+}
+
+.row .rectangle {
+    display: inline-block;
+    width: 19%;
+
+}

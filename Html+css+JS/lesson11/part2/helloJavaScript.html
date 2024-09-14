@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello JavaScript</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Hello JavaScript</h1>
+
+    <div class="frame">
+        <div class="task">
+            <h2> יש ליצור כפתור עם לחיצה 1 כל לחיצה על הכפתור תגדיל אותו ב1 </h2>
+            <button class="btn btn-success" onclick="task1()" id="btn"> 1</button>
+        </div>
+
+        <div class="task">
+            <h2>יש לשאול שאלה ואם התשבוה נכונה,לכתוב ״נכון״,אם התשובה לא נכונה ,לכתוב ״לא נכון״ </h2>
+            <p> <b>באיזה צבע בננה </b></p>
+            <input type="text" id="answer1">
+            <button class="btn btn-success" onclick="task2()" id="btn"> בדוק</button>
+            <span id="output1"></span>
+        </div>
+
+        <div class="task">
+            <h2>מה העיר הכי שווה?</h2>
+            <select onchange="task3()" id="city">
+                <option>חיפה</option>
+                <option>רשלצ</option>
+                <option>תל אביב</option>
+                <option>עכו</option>
+                <option>קרית ארבע</option>
+                <option>חדרה</option>
+                <option>ירושלים</option>
+            </select>
+            <span id="output2"></span>
+
+            <div class="task">
+                <h2>הצגת שתי תמונו שמשתנות בעת הלחיצה עליהן</h2>
+                <span id="output2"></span>
+
+                <div class="task">
+                    <h2>לחיצה על הכתפור מגידולה אותו כל פעם</h2>
+
+                    <span id="output2"></span>
+
+                </div>
+            </div>
+</body>
+
+</html>

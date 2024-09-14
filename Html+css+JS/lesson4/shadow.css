@@ -1,0 +1,21 @@
+body {
+    background-color: greenyellow;
+}
+
+.frame {
+    text-align: center;
+}
+
+.frame div {
+    width: 150px;
+    height: 150px;
+    margin: 16px;
+    display: inline-block;
+    background-color: black;
+}
+
+.frame>div:first-child {
+    border-radius: 25px;
+    background: rgb(237, 8, 8);
+
+}

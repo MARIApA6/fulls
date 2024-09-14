@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    font-family: 'rubik ', sans-serif;
+    background-color: beige;
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(246, 227, 162);
+}
+
+
+.frame {
+    /* רוחב */
+    width: 80%;
+    /* מקסימום רוחב */
+    max-width: 900px;
+    /* מינימום גובה */
+    min-height: 300px;
+    /* רקע */
+    background-color: rgb(255, 255, 255);
+    /* ריווח חיצוני אוטומטי (גורם למרכוס האלמנט) */
+    margin: auto;
+    /* ריווח פנימי של האלמנט */
+    padding: 8px 16px;
+    /* עיגול קצוות */
+    border-radius: 6px;
+}
+
+
+.images {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #00d6f1;
+    text-align: right;
+    margin: -8px -16px 16px -16px;
+}
+
+.navbar a {
+    padding: 8px;
+    display: inline-block;
+    text-decpration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: rgb(11, 224, 153);
+}
+
+.navbar a:active {
+    background-color: chocolate;
+}
+
+.navbar a:visited {
+    background-color: rgb(145, 110, 249);
+}
+
+.active {
+    background-color: #07d892;
+}
+
+img {
+    width: 49%;
+    transition: 0.3s;
+}
+
+img:hover {
+    scale: 1.1;
+}
+
+.list {
+    background-color: #cd00f1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+table {
+    width: 100px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    height: 30px;
+}
+
+tr:hover {
+    background-color: #cd00f1;
+}

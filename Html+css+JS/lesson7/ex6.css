@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(159, 90, 102);
+}
+
+nav {
+    background-color: white;
+    /*המארגין פה עובד ומדביק את הרקע של התפריט למעלה בגלל של הפרדינ שלו 16 ו8 אז עשינו מארגין שלילי בשביללהצמיד אותו  */
+    margin: -8px -16px;
+}
+
+nav a {
+    padding: 12px 8px;
+    display: inline-block;
+    /*הטקסט דקורישן מעיף את הקו תחתון ומשנה את זה למה שבא לי */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    position: relative;
+
+}
+
+/*האבר זה בזמן שהעכבר מרחף מעל ניתן לששנות את ההתנהגות של הטקסט ווטאבר*/
+nav a:hover {
+    color: pink;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    /*הדיספליי אין לין בלוק גורם לתפריט לעמוד אחד ליד השני */
+    display: inline-block;
+    /*הפוזיגן מקבע אותו  כך שאחר כך באיבר הילד שלו שלמטה נוכל לרשום רלנטיב והוא יהיה מתחתיו*/
+    position: relative;
+}
+
+/*כשעושים תפריט נפתח חשוב להוסיף דיפלי נונ כדי שלא יופיע כשאין הואבר*/
+.dropdown-content {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.dropdown-content a {
+    display: inline-block;
+}
+
+/*להשאיר רווח בין ההואבר לנקודה דרופ אחרת לא עובד*/
+li:hover .dropdown-content {
+    display: block;
+}

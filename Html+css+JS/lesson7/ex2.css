@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(248, 181, 126);
+    direction: rtl;
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    min-height: 600px;
+}
+
+header {
+    background-color: rgb(143, 131, 108);
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+nav {
+    background-color: beige;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    padding: 1%;
+    transition: 0.6s;
+
+}
+
+/*להעיף את הרווח שבין המילים בתפריט האחרון בגלל לאבט צאליד*/
+nav a :last-child {
+    border: none;
+}
+
+/*זה איך עושים שבזמן שאת מרחפת עם עבר מעל מילה בתפריט היא תשנה צבע */
+nav a:hover {
+    background-color: rgb(128, 125, 122);
+    scale: 1.1;
+    border: none;
+
+}

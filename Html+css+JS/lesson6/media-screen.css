@@ -1,0 +1,23 @@
+body {
+    background-color: #e3d1f2;
+}
+
+.third {
+    width: 33.33%;
+    height: 200px;
+    background-color: rgb(120, 196, 241);
+    border: 1px solid;
+    float: right;
+    box-sizing: border-box;
+
+}
+
+@media (max-width:601px) {
+    body {
+        background-color: lightgrey;
+    }
+
+    .third {
+        width: 100%;
+    }
+}

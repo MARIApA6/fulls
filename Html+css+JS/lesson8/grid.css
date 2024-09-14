@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(128, 179, 128);
+}
+
+.all div {
+    background-color: lightgray;
+    border: 1px solid;
+    text-align: center;
+    padding: 6px;
+}
+
+/*אם לא נגדיר את הדיב הזה בגריד זה לא יחלק לגרידים*/
+/*השם all זה התת שם של הדיבים בתוכך כל אחד ישנו שם יותר ספיפי*/
+.all {
+    display: grid;
+}
+
+.ex1 {
+    display: grid;
+    /*כל אוטו מוסיף עמודה אפשר גם לרשום באחוזים או 1fr ש;ה קיצור לשברים*/
+    grid-template-columns: auto auto;
+}
+
+.ex2 {
+    grid-template-columns: auto auto auto;
+}
+
+.ex3 {
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+.ex4 {
+    grid-template-columns: 10% 60% 30%;
+}
+
+.ex5 {
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+.ex5 div:nth-child(4) {
+    grid-column: 1 / 3;
+    background-color: rgb(237, 72, 72);
+}
+
+
+.ex6 {
+    /* FR- Fraction- שבר*/
+    /*יחידות מידה המאפשרות אחידות ושיניו יחסי*/
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.ex6 div:nth-child(4) {
+    grid-row: 2/4;
+    background-color: rgb(110, 110, 228);
+}

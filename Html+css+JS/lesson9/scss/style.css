@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  font-family: "rubik ", sans-serif;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
+h2 {
+  padding: 8px;
+  margin: 8px 0;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  background-color: pink;
+}
+
+.frame {
+  width: 80%;
+  max-width: 900px;
+  min-height: 300px;
+  background-color: rgb(178, 102, 109);
+  margin: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.ex1 h2 {
+  color: rebeccapurple;
+}
+.ex1 h2:hover {
+  background-color: #00d6f1;
+  color: rgb(0, 0, 0);
+}
+.ex1 p {
+  color: #00d6f1;
+}/*# sourceMappingURL=style.css.map */

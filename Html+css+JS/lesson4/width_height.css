@@ -1,0 +1,22 @@
+.myDiv {
+    background-color: azure;
+    height: 300px;
+    width: 300px;
+    padding: 12px;
+    margin: 16px;
+
+}
+
+.myDiv:last-child {
+    /*הגדרנו גובה לאלמנט וכל הטקסט גולש ממנו */
+    height: 300px;
+    /*הגדרנו שהגודל יכלול בתוכואת הריווח הפנימי והמסגרת*/
+    box-sizing: border-box;
+
+}
+
+
+.p {
+    /*ביטלנו את הריווח של הברירת מחדל של הפסקאות */
+    margin: 0;
+}

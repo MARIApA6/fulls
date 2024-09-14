@@ -1,0 +1,10 @@
+body {
+    background-color: lightgreen;
+}
+
+img {
+    width: 300px;
+    float: right;
+    margin-left: 8px;
+
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(214, 170, 255);
+}
+
+.frame div {
+
+    min-height: 160px;
+    margin: 14;
+    border: 3px solid #686b72;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.frame div:first-child {
+    border-top: solid 10px red;
+}
+
+.frame div:nth-child(3) {
+    border-style: dashed;
+    border-color: rebeccapurple;
+}
+
+.frame div:nth-child(4) {
+    border-color: bisque;
+    border-width: 2px;
+}
+
+frame div :last-child {
+    border-color: black;
+}
+
+frame div div {
+    border-color: inherit;
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: lightsalmon;
+}
+
+img {
+    width: 350px;
+    float: right;
+    margin: 0 0 0 20px;
+    border: 12px solid white;
+    box-shadow: 0 0 6px;
+
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(253, 251, 249);
+    margin: 3px;
+    border-radius: 6px;
+    border: 1px solid black;
+    float: right;
+}

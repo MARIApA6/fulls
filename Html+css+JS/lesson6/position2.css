@@ -1,0 +1,109 @@
+.frame {
+    padding-bottom: 50px;
+}
+
+h2 {
+    margin: 40px 0 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: whitesmoke;
+}
+
+.divFrame div {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid coral;
+    background-color: white;
+}
+
+.rightLayer,
+.leftLayer,
+.rightLayerLow {
+    background-color: rgb(246, 232, 33) !important;
+    position: relative;
+    z-index: 2;
+
+}
+
+.rightLayer {
+    top: 30px;
+    left: 30px;
+
+}
+
+.leftLayer {
+    top: -30px;
+    left: -30px;
+}
+
+.bigDiv {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(139, 139, 139);
+    margin: auto;
+    position: relative;
+
+}
+
+.bigDiv div {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+}
+
+.bigDiv div:first-child {
+    background-color: red;
+    top: 150px;
+    left: 350px;
+
+}
+
+.bigDiv div:last-child {
+
+    background-color: blue;
+    left: 30px;
+    top: 100px;
+
+}
+
+.rightLayerLow {
+    left: 3px;
+    top: 30px;
+}
+
+.show {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(193, 193, 193);
+}
+
+.show div {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.show div:nth-child(1) {
+    background-color: purple;
+}
+
+.show div:nth-child(2) {
+    background-color: orange;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 4;
+
+}
+
+.show div:nth-child(3) {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+}

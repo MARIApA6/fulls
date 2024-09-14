@@ -1,0 +1,12 @@
+.myDive {
+    background-color: beige;
+    padding: 8px 0;
+}
+
+myDiv>div {
+    background-color: antiquewhite;
+    margin: 8px;
+    padding: 12px;
+}
+
+.myDive>:last-child {}

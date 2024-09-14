@@ -1,0 +1,36 @@
+body {
+    background-color: pink;
+}
+
+.frame {
+    height: 750px;
+}
+
+table {
+    width: 100%;
+    /*גורם לקווים להתחבר ולהפוך הכל לטבלה*/
+    border-collapse: collapse;
+    text-align: center;
+
+    /*table-layout: fixed;*/
+    /*אם צריך לתקן את הטבלה*/
+}
+
+td {
+    border: 1px solid;
+    height: 150px;
+    text-align: center;
+    background-color: cornsilk;
+    color: black;
+    width: 25%;
+
+}
+
+tr:nth-child(2) td {
+    height: 400px;
+
+}
+
+tr:nth-child(2) td:nth-child(2) {
+    width: 50%;
+}

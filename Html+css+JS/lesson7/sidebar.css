@@ -1,0 +1,60 @@
+.frame {
+    padding: 0;
+    /*אובר פלו הידן גורם לתפריט להידבק לפריים בלי צורך בבפידין ומארגין*/
+    /* overflow: hidden;*/
+}
+
+nav {
+    background-color: rgb(228, 74, 125);
+    width: 150px;
+
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    width: auto;
+
+}
+
+/*
+ישנה חשיבות לעצב את a ולא את li בגלל שאם נעצב רק את הa לא כל המסגרת תהיה לחיצה רק המילה לכן חשוב לעצב את הa
+*/
+a:hover {
+    background-color: rgb(227, 138, 168);
+}
+
+li {
+    background-color: rgb(228, 74, 125);
+    position: relative;
+}
+
+/*החלק הזה חשוב הוא מסתיר את התפריט ומראה אותו בעת פעולת האובר */
+.open-menu {
+    display: none;
+}
+
+/*העניין עם האובר בתפריט לא יעבוד אם לא נסתיר את הפריט כמו שרשום מעל*/
+li:hover .open-menu {
+    display: block;
+}
+
+.open-menu {
+    position: absolute;
+    background-color: #e4a1b7;
+    width: 150px;
+    right: 150px;
+    display: none;
+    top: 1px;
+
+}

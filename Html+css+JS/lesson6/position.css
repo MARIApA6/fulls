@@ -1,0 +1,92 @@
+h2 {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: whitesmoke;
+}
+
+.example1 {
+    background-color: blueviolet;
+    color: white;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 2;
+}
+
+.example2 {
+    text-align: center;
+}
+
+.rectangle {
+    background-color: rgb(160, 136, 105);
+    height: 170px;
+    width: 32%;
+    position: relative;
+    display: inline-block;
+}
+
+.rectangle div {
+    height: 50px;
+    width: 80px;
+    background-color: rgb(252, 152, 31);
+    position: absolute;
+
+}
+
+.rectangle:nth-child(2) div {
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.rectangle:nth-child(3) div {
+    left: 0
+}
+
+.rectangle:nth-child(4) div {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.rectangle:nth-child(5) div {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rectangle:nth-child(6) div {
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.rectangle:nth-child(7) div {
+    bottom: 0;
+}
+
+.rectangle:nth-child(8) div {
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rectangle:nth-child(9) div {
+    bottom: 0;
+    left: 0;
+}
+
+.example3 div {
+    width: 400px;
+    height: 200px;
+    background-color: beige;
+    position: relative;
+    right: 50px;
+}

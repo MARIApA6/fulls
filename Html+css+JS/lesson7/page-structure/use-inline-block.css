@@ -1,0 +1,30 @@
+.frame {
+    font-size: 0;
+    /*removes the white border */
+}
+
+.frame>* {
+    border: 3px solid blueviolet;
+    height: 120px;
+    text-align: center;
+    background-color: cornsilk;
+    font-size: 18px;
+    color: rgb(10, 11, 11);
+    padding-top: 16px;
+}
+
+nav,
+section,
+aside {
+    display: inline-block;
+    height: 300px !important;
+    width: 25%;
+    box-sizing: border-box;
+
+}
+
+section {
+    width: 50%;
+}
+
+/*לא הצלחתי להחליפ את הצבע של הטקסט או לגרום לו להופיע מסיבה כלשהי?*/
