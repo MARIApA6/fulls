@@ -1,7 +1,6 @@
 import express from "express";
 import cors from 'cors';
-
-const app = express();
+export const app = express();
 
 app.listen(4444, () => {
     console.log("server is running on port 4444")
@@ -12,3 +11,6 @@ app.get("/", (req, res) => {
         message: "Hello world!",
     })
 });
+
+
+import('./handlers/files.mjs');
