@@ -1,0 +1,21 @@
+npm init -y
+
+// כל ההתקנות ביחד
+npm install express cors mongoose moment dotenv morgan chalk joi jsonwebtoken fs --save
+
+npm install express cors moment fs --save
+
+
+
+// התקנה חד"פ גלובלית
+npm i -g nodemon -D
+
+//**** לצורך עבודה עם ES6 ****//
+// חד"פ
+npm install -g express-generator
+
+\\ הוספה לקובץ package.json
+"type": "module",
+
+// שינוי הקבצים סיומות הקבצים
+.mjs
