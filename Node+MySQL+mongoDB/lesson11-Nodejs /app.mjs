@@ -13,4 +13,4 @@ app.get("/", (req, res) => {
 });
 
 
-//import('./handlers/files.mjs');
+import('./handlers/files.mjs');
