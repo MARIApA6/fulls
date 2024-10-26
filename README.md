@@ -7,3 +7,4 @@ flip card
 גככ
 nav bar
 sql
+צקקר
